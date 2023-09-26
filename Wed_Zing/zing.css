@@ -1,0 +1,490 @@
+/* Làm từ ngoài vào trong
+Làm từ trên xuống dưới
+Làm tổng quan */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bcl1{
+    /* background-color: aquamarine; */
+}
+.bcl2{
+    background-color: #999;
+}
+.bcl3{
+    /* background-color: #23a6d5; */
+}
+.bcl4{
+    background-color: #ffde76;
+}
+.bb {
+    border-bottom: 1px solid #ccc;
+}
+.mr2 {
+    margin-right: 2%;
+}  
+.mh400{
+    min-height: 400px;
+}
+.mh500{
+    min-height: 500px;
+}
+.mh600{
+    min-height: 600px;
+}
+.mh50{
+    min-height: 50px;
+}
+.row{
+    float: left;
+    width: 100%;
+}
+.boxcenter{
+    width: 100%;
+    margin: 0 auto;
+}
+.main{
+    float: left;
+    width: 100%;
+}
+
+.header{
+    width: 80%;
+    margin: 0 auto;
+}
+.menu img{
+    float: left;
+    margin: 5px 20px 5px 0px;
+    
+    margin-right: 80px;
+}
+.menu{
+    /* min-height: 40px; */
+    /* display: inline-block; */
+    border-bottom: 1px solid #ccc;
+    /* position: relative; */
+}
+.menu a {
+    font-weight: bold;
+    min-height: 50px;
+    padding: 16px 15px;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    color: #333;
+}
+.menu a:hover{
+    color: #3399cc;
+}
+.menu a:hover::before{
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 70%;
+    border: 1px solid #3399cc;
+}
+.user ,.search{
+    float: right;
+    padding: 14px 5px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.user:hover{
+    color: #3399cc;
+}
+.search:hover{
+    color: #3399cc;
+}
+.hotnew{
+
+
+}
+.hotnew > a{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+    /* min-height: 50px; */
+    margin: 40px 20px;
+    border-radius: 200px;
+    background-color: #eee;
+     /* padding: 10px 10px 10px 0px; */
+    /* margin-top: 20px 20px; */
+    /* padding: 10 10 10 0; */
+    color: #333;
+}
+.hotnew a:hover{
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background-size: 400% 400%;
+    animation: bggradient 1s ease infinite;
+    color: #fff;
+    background: -webkit-linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: -moz-linear-gradient(135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+.hotnew > img{
+    float: left;
+    padding: 0px 10px 10px 0px;
+    width: 36px;
+}
+.hotnew .weather{
+    float: right;
+    font-family: sans-serif;
+}
+.hotnew .weather span{
+    font-weight: bold;
+
+}
+.hotnew .weather img{
+float: right;
+width: 30px;
+}
+.lastnews .boxleft{
+    float:left;
+    width: 27%;
+}
+.boxleft .boxleftsub{
+    /* width: 70px; */
+    margin: 0 4px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.boxleft .boxleftsub img{
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+.boxleft .boxleftsub a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 150%;
+    /* display: inline-block; */
+  }
+.boxleft a:hover{
+    color: #23a6d5;
+}
+.lastnews .boxmid {
+    float: left;
+   width: 46%;
+}
+  .boxmid img{
+    float: left;
+    width: 100%;
+    padding: 10px 10px;
+}
+.boxmid >a{
+    float: left;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 0px 10px;
+    color: #333;
+    font-weight: bold;
+}
+.boxmid a:hover{
+    color: #23a6d5;
+}
+.boxmid p{
+    padding: 20px;
+    font-size: 14px;
+}
+.boxmid #li{
+    font-size: 20px;
+}
+.lastnews .boxright{
+    float: left;
+    width: 25%;
+}
+.lastnews .boxright img{
+    width: 100%;
+    padding-top: 10px;
+}
+.boxrightsub a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 0px 10px;
+    line-height: 150%;
+    margin-top: auto;
+}
+.boxrightsub a:hover{
+    color: #23a6d5;
+}
+/* .yellow{
+    margin: 0 auto;
+    background-color: #ffde76;
+    width: 80%;
+} */
+.bgboxcenter2{
+    min-height: 500px;
+    padding: 2%;
+    float: left;
+    width: 100%;
+}
+.boxcenter2{
+    width: 85%;
+    margin: 0 auto;
+    
+}
+.mrb{
+    margin-bottom: 20px;
+}
+.hdemo{
+    min-height: 100px;
+}
+.col6{
+    float: left;
+    width: 48%;
+}
+.boxmulti6 img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+.boxmulti6{
+    position: relative;
+}
+.bggda a{
+    font-size: 24pt;
+    color: #eee;
+    line-height: 130%;
+    text-decoration: none;
+    text-shadow: 5px 5px 10px #333;
+
+}
+.boxmulti6 a:hover,
+.col3 a:hover,
+.col3-1:hover{
+    color: #23a6d5;
+}
+
+/* .row a:hover{
+    color: #23a6d5;
+} */
+/* .boxmulti6 a:hover{
+    color: #23a6d5;
+} */
+
+.bggda{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    left: 0;
+    padding: 3%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0)
+    ,rgba(0, 0, 0, 1));
+}
+.col3{
+    float: left;
+    width: 22%;
+}
+.col3-1{
+    float: left;
+    width: 23%;
+}
+.col3-1 img,
+.col3 img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.col3 a,
+.col3-1 a{
+    color: #333;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+.multiheader{
+/* line-height: 60px; */
+padding: 10px;
+}
+.multiheader span{
+font-weight: bold;
+}
+.multiheader span::before{
+    
+}
+
+.multiheader >a{
+text-decoration: none;
+padding-left: 5%;
+color: #333;
+font-size: 12px;
+text-transform: uppercase;
+font-family: sans-serif;
+font-weight: 600;
+/* float: left; */
+transition: 0.5s;
+}
+.multiheader >a:hover{
+    color: #e73c7e;
+    font-size: 17px;
+    font-family: sans-serif;
+    transition: 0.5s;
+    
+}
+.boxcenter3{
+    width: 80%;
+    margin: 0 auto;
+}
+.box1{
+    float: left;
+    width: 70%;
+    
+}
+.box2{
+    float: left;
+    width: 28%;
+}
+.boxnewsdm{
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.boxnewsdm  img{
+    width: 25%;
+    height: 25%;
+    margin-right: 10px;
+    float: left;
+    display: block;
+    object-fit: cover;
+}
+.boxnewsdm >a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+}
+.boxnewsdm >a:hover{
+    color: #23a6d5;
+}
+.boxnewsdm >p{
+    font-size: 14px;
+    color: #999;
+    line-height: 150%;
+}
+.box2 >img{
+    /* float: left; */
+    width: 100%;
+}
+.boxcenter4{
+    width: 80%;
+    margin: 0 auto;
+}
+.boxmama, .boxdm{
+    width: 23%;
+    float: left;
+    min-height: 350px;
+    /* background-color: #23d5ab; */
+    position: relative;
+}
+.boxmama img{
+    width: 100%;
+    min-height: 350px;
+    object-fit: cover;
+    display: block;
+    transition: 0.5s;
+}
+.padtb{
+    padding: 30px 0px;
+}
+.tendm{
+    position: absolute;
+    top: 0px;
+    left: 30%;
+    width: 40%;
+    background-color: #ffde76;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: center;
+}
+.tentindm{
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0,0,0,0.8));
+    text-align: center;
+    padding: 10%;
+    min-height: 100px;
+}
+.tentindm > a{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: serif;
+    text-shadow: 1px 1px 1px #333;
+    text-decoration: none;
+    /* bottom: 30px; */
+    /* margin-bottom: 2; */
+    /* top: 120px; */
+    
+}
+.tentindm .icontin{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: #ffde76;
+    left: calc(50% - 20px);
+    position: absolute;
+    bottom: 140px;
+}
+.boxmama:hover img{
+    transform: scale(1.2);
+}
+.boxmama{
+    overflow: hidden;
+}
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.boxmama >a {
+    
+}
+.mega{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+}
+.boxcenter5{
+    width: 100%;
+    /* position: relative; */
+    background: #f7f7f7;
+}
+.boxcenter6{
+    /* position: absolute; */
+    width: 80%;
+    margin: 0 auto;
+}
+.mh200{
+    min-height: 200px;
+}
+.boxft1{
+    float: left;
+    /* background-color: #23a6d5; */
+    width: 55%;
+    /* height: 100px; */
+}.boxft2{
+    float: left;
+    width: 40%;
+    /* background-color: rebeccapurple; */
+}
+.boxft1 >p{
+    line-height: 30px;
+    font-size: 12px;
+}
+.boxft2 > P{
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 10px;
+    /* margin-top: 20px; */
+}
+.p1{
+    margin-top: 100px;
+}
